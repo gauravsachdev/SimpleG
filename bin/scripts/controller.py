@@ -349,6 +349,7 @@ class Controller(logging.Handler):
         temp_list = list(self.view.view_vbox.children)
         temp_list.append(mapbox)
         self.view.view_vbox.children = tuple(temp_list)
+        #print(self.view.view_vbox.children)
         return
     def create_map_widget_compare(self,map_id):
         
